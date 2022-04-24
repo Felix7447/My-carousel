@@ -1,0 +1,124 @@
+body {
+  margin: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+  background: linear-gradient(red, blue);
+  font-family: sans-serif;
+  color: white;
+  overflow-x: none;
+}
+
+header {
+  height: 10vh;
+}
+
+.title {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+}
+
+main h2 {
+  margin-left: 12px;
+}
+
+.carousel-container {
+  height: 100%;
+  padding: 24px 4px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.carousel-container::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 24px;
+  height: 12px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background-color: rgba(94, 92, 92, 0.5);
+  border-radius: 24px;
+}
+
+.carousel-container::-webkit-scrollbar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 280px;
+  height: 100%;
+  position: relative;
+  margin: 0px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  white-space: normal;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transition: 450ms all;
+  transition: 450ms all;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card:hover .card-content {
+  opacity: 1;
+}
+
+.card:hover ~ .card {
+  -webkit-transform: translate3d(10px, 0, 0);
+          transform: translate3d(10px, 0, 0);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-content {
+  opacity: 0;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), black);
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+.card-content h3 {
+  margin: 12px 0px;
+  margin-left: 4px;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+.card-content p {
+  margin: 0px;
+  padding: 0px 8px;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+footer {
+  height: 10vh;
+}
+
+footer h3 {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

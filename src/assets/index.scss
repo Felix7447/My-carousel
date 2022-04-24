@@ -1,0 +1,122 @@
+$primary-color: red;
+$secondary-color: blue;
+
+body {
+    margin: 0px;
+    background: linear-gradient($primary-color, $secondary-color);
+    font-family: sans-serif;
+    color: white;
+    overflow-x: none;
+}
+
+header {
+    height: 10vh;
+}
+
+.title {
+    text-align: center;
+    
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+}
+
+main h2 {
+    margin-left: 12px;
+}
+
+.container {
+}
+
+.carousel-container { 
+    height: 100%;
+    padding: 24px 4px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+// Scrollbar styles
+.carousel-container::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 24px;
+    height: 12px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: rgba(94, 92, 92, 0.5);
+    border-radius: 24px;
+}
+
+.carousel-container::-webkit-scrollbar:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+// Scrollbar styles
+
+.card {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 280px;
+    height: 100%;
+    position: relative;
+    margin: 0px 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    white-space: normal;
+    transform-origin: center left;
+    transition: 450ms all;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card:hover ~ .card {
+    transform: translate3d(10px, 0, 0);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-content {
+    opacity: 0;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 7));
+    transition: 450ms;
+}
+
+.card-content h3 {
+    margin: 12px 0px;
+    margin-left: 4px;
+    transition: 450ms;
+}
+
+.card-content p {
+    margin: 0px;
+    padding: 0px 8px;
+    transition: 450ms;
+}
+
+
+footer {
+    height: 10vh;
+}
+
+footer h3 {
+    text-align: center;
+}
